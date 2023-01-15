@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- method get request. -->
+        <!--HTML INPUT-->
+    <form action=""  method="process.php">
+        <label for="name">Name</label> <br> <!--Label üzerine basılsa bile boxa odaklanmasına sağlar-->
+        <input type="text" id = "name" placeholder="Name" />
+        
+        <button type = "submit">Gönder</button>
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Sıfırla">
+            <br>
+            <label for="email">Email</label> <br>
+
+        <input type="email" id="email" name="email" placeholder="Email"> 
+        <input type="submit" value="Email Submit"> <br>
+        <label for="passsword" >Password</label> <br>
+        <input type="password" id="password" name="password" placeholder="Password">
+        <input type="submit" value="Parola onayla" id="password"> <br>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date">
+            <!--Custom radio button--> <br>
+        Gender <br>
+        Male   
+        <input type="radio" name="gender" value="Male">
+        Female
+        <input type="radio" name="gender" value="Female">
+        Other
+        <input type="radio" name="gender" value="Other">
+    
+            <!--Eğer name gender 2 olsaydı 2 farklı seçenek işaretleyebilirdi.-->
+        <br>
+
+        Hobbies <br>
+        Technology
+        <input type="checkbox" name = "tech" id="tech">
+        Music
+        <input type="checkbox" name="music" id="music">
+        Art
+        <input type="checkbox" name="art" id="art" checked>
+
+
+        <br>
+
+        Degree <br>
+        <select name="degree" id="degree">
+            
+            <option value="Bachelor Science">Lisans</option>
+            <option value="Master Science">Yüksek Lisans</option>
+            <option value="PhD Science">Doktora</option>
+            <option value="High School">Lise</option>
+            <option value="Primary">İlk Okul</option>
+            <option value="Not Selected" selected>Seçiniz</option>
+
+            
+            
+    </select>
+    <br><br>
+    Text Alanı <br>
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+  
+     <br><input type="submit" value="Submit">
+    <input type="reset" name="reset" value="Reset">
+</form>
+
+    
+</body>
+</html>
