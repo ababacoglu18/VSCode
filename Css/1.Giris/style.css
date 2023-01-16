@@ -1,0 +1,9 @@
+h1{
+    color : blue;
+}
+/*
+# id selector
+. class selector.
+(id).class{} yaparsan ve koşulu.
+override hiyerarşisinde tepede !important konursa veri override edilmez. 
+*/
