@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hover&PseudoClass</title>
     <style>
+
+       
+
+
+
         /*selector:pseudo_class{
 
         }*/
@@ -14,13 +19,41 @@
        /*UE5'te BeginCursorOver olayının Web'deki versiyonu.*/
        /* == OnMouseHover'ın aynısı, adına Hover demişler*/
         }
+        a:link{
+            color: green;
+        }
+        a:visited{
+            /*Eğer tıklanmışsa*/
+            color: black;
+        } 
+        a:active{
+            /*Tam Tıklar*ken* Basılı tutunca */
+            color: pink;
+        }
         a:hover{
             color: red;
         }
+    
+        input{
+            font-size: 2.5em;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+        input:focus{
+            outline: 0; /*Dış hattı sıfırlar*/
+            /*Text alanına tıklanmışken*/
+            border: 2px solid red;
+        }
+
+            a{
+                color: blue;
+            }
     </style>
 </head>
 <body>
-    <a href="#">This is a Link</a>
+    <input type="text" placeholder="Name">
+    <a href="#">Facebook</a>
     
 </body>
 </html>

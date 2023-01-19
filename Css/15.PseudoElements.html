@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para1{
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+        }
+         .para1::first-line{
+            color: red; /*İlk Satır*/
+        }
+        .para1::grammar-error{
+            color: burlywood;
+        } 
+        .para1::after{
+            content: " Paragraf sonrası...";
+        }
+        .para1::before{
+            content: "Selam ";
+        }
+    </style>
+</head>
+<body>
+    <p class="para1">Lorem sdfsd ipsum dolor sit amet consectetur adipisicing elit. Distinctio tenetur fuga placeat impedit dolorem debitis laudantium quos, ullam alias perferendis atque aperiam. Illo provident in quae alias blanditiis cumque doloribus hic officiis totam voluptatem ipsam, veniam ipsa cum culpa dolor harum nesciunt ducimus minus sapiente placeat modi aliquam asfddasf atque rerum? Perferendis hic libero, cumque impedit molestiae iste reiciendis, exercitationem modi sequi maiores itaque. Maxime a sed officia porro aut, earum alias eius, repellat mollitia quae, ipsam aspernatur facilis ullam vitae tenetur inventore! Laborum pariatur nam eligendi illum excepturi at aperiam, neque facere molestiae eaque sequi ex voluptatem natus modi sapiente!</p>
+    
+</body>
+</html>

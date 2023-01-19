@@ -7,3 +7,4 @@ ctrl+d+yön tuşları = seçili kelimenin aynısını bir sonraki içerikte bulu
 ctrl + alt +ok imleci çoğaltarak toplu düzenleme sağlar
 alt tuşuna basarak imleçle seçersen yine çoklu seçim imkanı sağlar
 ctrl k ctrl+L yaparsan etiketleri katlar.
+ctrl k + ctrl + u seçili kodu commente alır.
