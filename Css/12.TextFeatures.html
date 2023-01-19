@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Features</title>
+    <style>
+        div{
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        p{
+            letter-spacing: 1px; /*harf arası boşluk*/
+        }
+        h1{
+            background: seashell;
+        }
+        .heading1{
+            text-align: center;
+        }
+        .heading2{
+            text-align: left;
+        }
+        .heading3{
+            text-align: right;
+        }
+        #span1{
+            text-decoration: underline;
+        }
+        #span2{
+            text-decoration: line-through; /*üstünü çizer*/
+            text-decoration: overline;
+            color: blueviolet;
+        }
+        
+        h1{
+            text-transform: capitalize; /*sadece baş harf*/
+           /* text-transform: uppercase;*/ /*Hepsi Büyük Harf*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="heading1">Başlık 1</h1>
+    <h1 class="heading2">Başlık 2</h1>
+    <h1 class="heading3">Başlık 3</h1>
+
+    <div>
+        <h1>article 1</h1>
+        <p>Lorem ipsum  <span id="span1"> dolor sit </span> amet <span id="span2"> consectetur adipisicing elit.</span> Facilis, pariatur!</p>
+    </div>
+    
+</body>
+</html>
