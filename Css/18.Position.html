@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .fixed-topbar{
+        width: 50%;
+        padding: 20px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        position: fixed;
+        right: 20px;
+        bottom: 10px;
+    }
+    .red{
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        position: relative;
+        top: 30px;
+        left: 10px;
+        z-index: 1;
+    }
+    .blue{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+        top: 10px;
+        left: 20px;
+        z-index: 0;
+    }
+    .outerbox{
+        width: 200px;
+        height: 200px;
+        background-color: #a7a7a7;
+        position: relative;
+    }
+    .innerbox{
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+        position: absolute; /*kapsayıcının mutlaka absolute olması lazım*/
+      top: 10px;
+      left: 10px;
+      bottom: 10px;
+    }
+ /*Position (Bulunduğu yerden işlem yapar Bkz:(Anchors))*/
+/*Blue sonradan yazıldığı için redin üzerine çıkıyor bunun için z-index belirleyebiliriz.*/
+</style>
+<body style="height: 1000px">
+
+    <div class="outerbox">
+        <div class="innerbox"></div>
+    </div>
+ 
+     <div class="fixed-topbar">Udemy</div> 
+
+     <div class="red"></div>
+     <div class="blue"></div>
+</body>
+</html>
