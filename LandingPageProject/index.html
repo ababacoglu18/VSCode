@@ -7,25 +7,125 @@
     <title>Landing Page Tasarımı</title>
     <meta name = "keyword" content="Navbar">
     <meta name="description" content="Programlama">
-    <link rel="stylesheet" href="Css/global.css">
-    <link rel="stylesheet" href="Css/main.css">
-  <!--Tablet Query-->  <link rel="stylesheet" media="(max-width:768px)" href="Css/tablet.css">
-  <!--Mobile Query-->  <link rel="stylesheet" media="(max-width:500px)" href="Css/mobile.css">
+    <link rel="stylesheet" href="Css2/global.css">
+    <link rel="stylesheet" href="Css2/main.css">
+  <!--FontAwesome!-->  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!--Tablet Query-->  <link rel="stylesheet" media="(max-width:768px)" href="Css2/tablet.css">
+  <!--Mobile Query-->  <link rel="stylesheet" media="(max-width:500px)" href="Css2/mobile.css">
   <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Oleo+Script&family=Oswald:wght@200&display=swap" rel="stylesheet">
   <!--Cdnjs search fontawesome!-->  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
 </head>
 <body>
     <header class="bg-dark-blue">
-        <nav id="navbar" >
-            <h1 class="heading-small">Proximenes</h1>
-            <ul>
-                <li><a href="#home">Ana Sayfa</a></li>
-                <li><a href="#training">Eğitimler</a></li>
-                <li><a href="#courses">Kurslar</a></li>
-                <li><a href="#contact">İletişim</a></li>
-            </ul>
-        </nav>
+
+        <div class="container">
+
+            <nav id="navbar" >
+                <h1 class="heading-big" >Nöropsükolog Melek Şen</h1>
+                <ul>
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#training">Eğitimler</a></li>
+                    <li><a href="#courses">Kurslar</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <section id="home">
+        <img src="Css2/Photos/WhatsApp Image 2023-01-24 at 19.38.59.jpeg" id="minik" alt="MS">
+       <div class="name text-center" >
+        <h2 class="heading-big">Psük. Melek Şen</h2>
+        <p>Nöropsikolog | MSc at University of Padua</p>
+       </div>
+       <a href="#courses" class="btn btn-dark ">  Kurslara Git</a>
+    </section>
+
+
+    <section id="training" class="bg-dark-blue">
+        <h3 class="text-center heading-medium">Eğitimler</h3>
+        <div class="items">
+             <article class="item">
+            <i class="fa-solid fa-award"></i> 
+                <h3>Lisans Eğitimi</h3>
+                <p>Maltepe Üniversitesi Psikoloji Bölümü</p>
+            </article>
+            <article class="item">
+                <i class="fa-solid fa-award"></i> 
+                    <h3>Yüksek Lisans Eğitimi</h3>
+                    <p>University of Padua</p>
+                </article>
+                <article class="item">
+                    <i class="fa-solid fa-award"></i> 
+                        <h3>Maymuşluk Eğitimi</h3>
+                        <p>Zümrütevler/Maltepe</p>
+                    </article>
+        </div>
+      </section>
+
+      <section id="courses">
+        <h3 class="text-center heading-medium">Kurslar</h3>
+      <div class="container">
+        <div class="courses">
+            <div class="course">
+                <div class="course-image">
+                    <img src="Css2/Photos/NPDEgtIV-v2.jpg" alt="Nöropsikoloji Eğitimi">
+                    <span>%60 İndirim</span>
+                </div>
+                <div class="course-info">
+                    <div class="title">
+                    Nöropsikoloji Eğitimi
+                    </div>
+                    <div class="description">
+                        Psikoloji Bölümü Mezunları İçin Sıfırdan Nöropsikoloji
+                    </div>
+                    <div class="instructor">Melek Şen | Öget Öktem</div>
+                    <div class="rating"> 4.6 | (7000 Oylama)</div>
+                </div>
+            </div>
+
+            <!--Course 1-->
+            <div class="course">
+                <div class="course-image">
+                    <img src="Css2/Photos/NPDEgtIV-v2.jpg" alt="Nöropsikoloji Eğitimi">
+                    <span>%60 İndirim</span>
+                </div>
+                <div class="course-info">
+                    <div class="title">
+                    Nöropsikoloji Eğitimi
+                    </div>
+                    <div class="description">
+                        Psikoloji Bölümü Mezunları İçin Sıfırdan Nöropsikoloji
+                    </div>
+                    <div class="instructor">Melek Şen | Öget Öktem</div>
+                    <div class="rating"> 4.6 | (7000 Oylama)</div>
+                </div>
+            </div>
+
+            <!--Course 2-->
+            <div class="course">
+                <div class="course-image">
+                    <img src="Css2/Photos/NPDEgtIV-v2.jpg" alt="Nöropsikoloji Eğitimi">
+                    <span>%60 İndirim</span>
+                </div>
+                <div class="course-info">
+                    <div class="title">
+                    Nöropsikoloji Eğitimi
+                    </div>
+                    <div class="description">
+                        Psikoloji Bölümü Mezunları İçin Sıfırdan Nöropsikoloji
+                    </div>
+                    <div class="instructor">Melek Şen | Öget Öktem</div>
+                    <div class="rating"> 4.6 | (7000 Oylama)</div>
+                </div>
+            </div>
+           
+        </div>
+
+      </div>
+    
+    </section>
     
 </body>
 </html>

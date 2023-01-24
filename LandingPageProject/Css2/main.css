@@ -1,0 +1,136 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none; /*linklerin altı çizilmesin*/
+    color: #fff;
+}
+html{
+    font-family: 'Gotu', sans-serif;
+}
+
+/*navbar*/
+#navbar{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem ;
+    height: 70px;
+}
+#navbar ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar ul li a{
+    padding: 0.5rem;
+}
+#navbar ul li a:hover{
+ 
+    background: #336ea2;
+    border-radius: 13px;
+}
+
+/*Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+
+#home img {
+max-width: 25%;
+height: auto;
+border-radius: 100%;
+margin-bottom: 0.5rem;
+box-shadow: 0 0 30px #0c63c598;
+}
+#home img:hover{
+    
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+    
+}
+#home .name h2{
+    margin-bottom: 0.35rem;
+}
+#home .name p{
+    opacity: 0.6;
+    font-style: italic;
+    margin-bottom: 1.2rem;
+}
+#home a{
+    margin-top: 1.25rem;
+    background: #336ea2;
+    padding: 0.8rem 2rem;
+    border-radius: 7px;
+    letter-spacing: 0.5px;
+}
+
+#home a:hover{
+    animation:  scale-loop 1s linear infinite;
+    
+        transform: scale(1.1);
+        color: blue;
+        transition: all 0.5s ease-in-out;
+        background: #fff;
+        border: 0.5px solid #0c63c598;
+        color: #0c63c598;
+        box-shadow: 0 0 10px #0c63c598;
+       
+    
+}
+
+@keyframes scale-loop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*Training*/
+
+#training{
+    color: #fff;
+    padding: 1rem;
+}
+#training .items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#training .items .item{
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+}
+#training .items .item:hover{
+    transition: all 1s ease-in-out;
+    color: blanchedalmond;
+}
+
+#courses {
+    color: #333;
+    padding: 1rem;
+    
+}
+.courses{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
