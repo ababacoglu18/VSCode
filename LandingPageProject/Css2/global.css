@@ -66,4 +66,41 @@
     max-width: 1100px;
     margin: 0 auto; /*GenişEkran Ortalama*/
 }
+.form-group{
+    padding: 0.25rem 0;
 
+}
+
+.form-group label{
+    display: block;
+}
+.form-control{
+    width: 100%;
+    padding: 0.25rem;
+    font-size: 1rem;
+    resize: none;
+    border-radius: 5px;
+    box-shadow: #062e51;
+}
+.contact .contact-form ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 1rem;
+    align-self: center;
+    box-shadow: #062e51;
+    
+}
+.contact .contact-form ul li a{
+    padding: 1rem;
+    font-size: 2rem;
+    box-shadow: #062e51;
+}
+.contact .contact-form ul li a:hover{
+    opacity: 0.8;
+}
+/* .contact .contact-form ul li{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-self: center;
+} */

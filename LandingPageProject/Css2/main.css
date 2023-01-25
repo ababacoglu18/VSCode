@@ -187,3 +187,19 @@ box-shadow: 0 0 30px #0c63c598;
    
 }
 
+.contact{
+    background: #062e51;
+    color: #fff;
+    padding: 1rem;
+}
+.contact .contact-form ul li{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 40px;
+    align-items: center;
+}
+
