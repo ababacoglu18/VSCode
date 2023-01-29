@@ -8,3 +8,12 @@ ctrl + alt +ok imleci çoğaltarak toplu düzenleme sağlar
 alt tuşuna basarak imleçle seçersen yine çoklu seçim imkanı sağlar
 ctrl k ctrl+L yaparsan etiketleri katlar.
 ctrl k + ctrl + u seçili kodu commente alır.
+
+
+
+Not: HTML Collecion üzerinde gezinmek istersen
+const a = Array.from(documents.all) diyerek Arraye çevir
+collections.forEach(function(collection)){
+    console.log(collection)  olarak for each kullanabilirsin.
+} for döngüsüyle normal olarak gezinebilirsin elements.length e kadar.
+forEach type olarak Object kabul eder.
