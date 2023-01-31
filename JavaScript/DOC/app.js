@@ -39,13 +39,13 @@ element.forEach(function(el){
 
 //Style Özellikleri değiştirmek için ->
 
-const element = document.querySelector("#clear-todos");
+//const element = document.querySelector("#clear-todos");
 
 /*console.log(element.id);
 console.log(element);
 console.log(element.className); GET*/
 
-element.className = "btn btn-warning";
+/*element.className = "btn btn-warning";
 
 element.style.color = "#fff";
 element.style.marginLeft = "50px";
@@ -127,6 +127,87 @@ const text = document.createTextNode("sas");
 newLink.textContent = "Ekle";
 newLink.appendChild(document.createTextNode("Farklı"))
 cardBody.appendChild(text);
+*/
+
+
+//Dinamik Element Silmek
+
+const todoList = document.querySelector("ul.list-group");
+
+const todos = document.querySelectorAll("li.list-group-item")
+
+//console.log(todos);
+
+
+
+//Remove Metodu 
+
+todos[1].remove();
+
+
+//Remove Child.
+
+todoList.removeChild(todoList.lastElementChild);
+
+todoList.removeChild(todos[2]);
+
+//REPLACE METODU ;
+
+const card_body = document.querySelectorAll(".card-body")[1];
+
+const newElement = document.createElement("h3");
+console.log(newElement);
+
+newElement.className = "card-title";
+newElement.id = "tasks-title";
+newElement.textContent = "Yeni Todolar";
+
+//Eski element
+
+const oldElement = document.querySelector("#tasks-title");
+
+card_body.replaceChild(newElement, oldElement);
+
+
+//Dinamik Attribute Change Hardcoded
+
+const todoInput = document.getElementById("todo");
+let element;
+
+
+element = todoInput;
+element = todoInput.classList;
+
+//todoInput.className = "form-control newClass";
+
+/*todoInput.classList.add("newClass");
+todoInput.classList.add("newClass2");
+
+
+todoInput.classList.remove("form-control");
+element = todoInput;*/
+
+
+element = todoInput.Placeholder;
+element = todoInput.getAttribute("placeholder");
+
+todoInput.setAttribute("placeholder","Naber");
+
+todoInput.setAttribute("title", "Input");
+
+element = todoInput.hasAttribute("name"); //bool control
+
+todoInput.removeAttribute("name");
+
+console.log(element);
+
+//DOM MANIPULATION TEKRAR ET!
+
+
+
+
+
+
 
 
 
