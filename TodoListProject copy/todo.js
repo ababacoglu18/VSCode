@@ -13,7 +13,7 @@ eventListeners();
 
 function eventListeners(){ //Tüm event listenerlar.
     form.addEventListener("submit", addTodo);
-    todoInput.addEventListener("keyup",ControlTodos);
+
     document.addEventListener("DOMContentLoaded",loadAllTodosToUI);
     secondCardBody.addEventListener("click",deleteTodo);
     filter.addEventListener("keyup",filterTodos);
@@ -58,21 +58,7 @@ function filterTodos(e){
 
 }
 
-function ControlTodos(e){
-    const  controlValue = e.target.value.toLowerCase();
-    const listItem = document.querySelectorAll(".list-group-item");
 
-    listItem.forEach(function(listItem){
-        const text =  listItem.textContent.toLowerCase();
-        if (text.indexOf(controlValue) === -1){
-    
-            return false;
-        }
-        else{
-           true
-        }
-      })
-}
 
 function deleteTodo(e){
 
@@ -111,29 +97,26 @@ function loadAllTodosToUI(){
     }    
 );
 }
-function addTodo(e){
-        const newTodo = todoInput.value.trim();
-
-        if (newTodo === ""){
-            /*<div class="alert alert-danger" role="alert">
-  This is a danger alert—check it out!
-</div>*/
-            showAlert("danger","Lütfen Geçerli Bir Todo Girin");
-        }
-        else if (ControlTodos(newTodo) == false){
-
-            showAlert("danger","Aynısı Var.");
-        }
-        else{
-
-            addTodoToUI(newTodo); 
-            addTodoToStorage(newTodo);
-
-            showAlert("success","Todo Başarıyla Eklendi.");
-            
-            
-        } e.preventDefault(); // sayfa önceye yüklenmesin diye.
-}
+function addTodo (e) {
+    const newTodo = todoInput.value.trim()
+  
+    if (newTodo === '') {
+      showAlert('danger', 'Lütfen Geçerli Bir Todo Girin')
+    } else {
+      const todos = getTodosFromStorage()
+      const todoExists = todos.some(todo => todo === newTodo)
+  
+      if (todoExists) {
+        showAlert('danger', 'Bu todo zaten kaydedilmiş')
+      } else {
+        addTodoToUI(newTodo)
+        addTodoToStorage(newTodo)
+        showAlert('success', 'Todo Başarıyla Eklendi.')
+      }
+    }
+  
+    e.preventDefault()
+  }
 function addTodoToStorage(newTodo) {   ///ÖNEMLİ!
     let todos = getTodosFromStorage();
 
