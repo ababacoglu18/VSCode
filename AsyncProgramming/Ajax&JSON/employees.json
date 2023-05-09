@@ -1,0 +1,20 @@
+[
+
+
+    {
+        "name" : "Mustafa Murat",
+        "department" : "Bilişim",
+        "salary" :3500
+    } ,
+    {
+        "name" : "Mustafa",
+        "department" : "Yönetim",
+        "salary" :5000
+    } ,
+    {
+        "name" : "Murat",
+        "department" : "Makine",
+        "salary" :1000
+    }
+
+]
