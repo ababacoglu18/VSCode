@@ -115,7 +115,7 @@ a{
 
 h1{
     font-family: 'Herr Von Muellerhoff', cursive;
-    font-size: 8.5rem;
+    font-size: 10rem;
     font-weight: 100;
     line-height: 0.4;
     letter-spacing: 2px;
@@ -124,7 +124,7 @@ h1{
 
 .first-letter{
     font-family: 'Herr Von Muellerhoff', cursive;
-  font-size:   10.3rem;
+  font-size:   13rem;
   color: #c9beb0;
 }
 
@@ -183,13 +183,13 @@ h3{
 }
 
 .about-title h2 {
-   
+    font-family: 'Gotu', sans-serif;
     width: 100%;
     text-align: center;
     margin: 0 auto;
     color: #806262;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
 
 }
 .about-title h2::after {
@@ -201,6 +201,7 @@ h3{
     margin: 0 auto;
     display: block;
     margin-top: 15px;
+    font-weight: 100;
 
 }
 
@@ -219,12 +220,29 @@ h3{
 }
 
 .about-text {
-    width: 40%; }
+
+  
+    width: 40%; 
+}
 
     h4{
         font-family: 'Herr Von Muellerhoff', cursive;
+        color: #806262;
         margin-bottom: 25px;
         text-align: center;
         font-size: 65px;
-        font-weight: 100;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
     }
+
+    #asteriks{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .about-text p{
+        font-size: 15px;
+        text-align: center;
+        color: #2c2727;
+    }
+    
