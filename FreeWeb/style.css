@@ -1,0 +1,230 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Oleo+Script&family=Oswald:wght@200&family=Poppins:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Herr+Von+Muellerhoff&family=Oleo+Script&family=Oswald:wght@200&family=Poppins:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@100&display=swap');
+
+*,       /*bu dosyayı tut!*/
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a,
+a:link,
+a:visited{
+    text-decoration: none; /*altı çizili istemiyoruz*/
+    outline: none; /*basıldığı zaman üstüne işaret çıkmasın*/
+    border: none;
+}
+
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+section,span,p{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+.container{
+    max-width: 1800px;
+    margin: 0 auto; /*alt üst 0 kenar oto*/
+    padding: 0 0;
+   
+}
+
+.header{
+    background-image: url(taisiia-shestopal-l5GkMpCBK8E-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;  /*  tüm ekranı kaplar! çok önemli*/
+}
+
+.header-h2{
+    letter-spacing: 3px;
+    font-size: 50px;
+    
+    font-weight: 500;
+   font-family: 'Herr Von Muellerhoff', cursive;
+    color: #e9cccc;
+}
+
+.header-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+
+}
+
+
+
+
+.header-logo{
+    font-size: 16px;
+    border-bottom: 5px solid #e9cccc;
+    border-radius: 35px;
+    padding-bottom: 5px;
+}
+
+.navbar-list{ /*ul*/
+    display: flex;
+}
+
+
+
+li{
+    margin-left: 75px;
+    
+    
+}
+li:last-child{
+    margin-right: 100px;
+}
+
+a{
+    color: #ffcbcb;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+.header-text{
+
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+h1{
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 8.5rem;
+    font-weight: 100;
+    line-height: 0.4;
+    letter-spacing: 2px;
+    color: #c9beb0;
+}
+
+.first-letter{
+    font-family: 'Herr Von Muellerhoff', cursive;
+  font-size:   10.3rem;
+  color: #c9beb0;
+}
+
+h3{
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+ 
+    color: #c9beb0;
+}
+
+.btn-travel{
+    font-family: 'Gotu', sans-serif;
+    display: block;
+    background-color: #b89a73;
+    color: #806262;
+    padding: 10px 15px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    position: relative; /* buna relative vermeden aşağı absolute veremezsin!*/
+    overflow: hidden; /*taşarsa gizle*/
+}
+
+.btn-travel::after{
+    font-family: 'Gotu', sans-serif;
+    content: "I nostri viaggi";
+    position: absolute; 
+    top: 100%;
+    left: 0;
+    background-color: #806262;
+    color: #b89a73;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    transition: .5s;
+}
+
+.btn-travel:hover::after{
+    top:0; 
+}
+
+
+/**ABOUT*/
+
+.about{
+    margin-bottom: 150px;
+}
+
+.about-title{
+    margin: 60px 0;
+}
+
+.about-title h2 {
+   
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #806262;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.about-title h2::after {
+   
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #806262;
+    margin: 0 auto;
+    display: block;
+    margin-top: 15px;
+
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#image{
+   border-top-left-radius: 35px;
+   border-bottom-right-radius: 35px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh; 
+}
+
+.about-text {
+    width: 40%; }
+
+    h4{
+        font-family: 'Herr Von Muellerhoff', cursive;
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 65px;
+        font-weight: 100;
+    }
