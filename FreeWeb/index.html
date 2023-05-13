@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travel With Hera</title>
     <link rel="stylesheet" href="style.css">
    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/google.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/twitter.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/layout-list.css' rel='stylesheet'>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
 <body>
@@ -20,12 +26,13 @@
                         <h2 class="header-h2">Travel  With  Hera</h2>
                     </div>
                     <div class="header-menu">
-                        <ul class="navbar-list">
+                        <ul class="navbar-list" id="menu-items">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Discover</a></li>
                             <li><a href="#">Content</a></li>
                         </ul>
+                        <i class="gg-layout-list" id="menu-icon" onclick="menuToggle();"></i>
                     </div>
                 </div>
                 <div class="header-text">
@@ -45,10 +52,10 @@
                     <h2>ABOUT</h2>
                 </div>
                 <div class="about-content"> <!--Image post kapsayıcı-->
-                    <div class="about-img">
+                    <div class="about-img anime-left">
                         <img src="diego-gennaro-V92cQegtuOs-unsplash.jpg" id="image" alt="#">
                     </div>
-                    <div class="about-text">
+                    <div class="about-text anime-right">
                         <h4>Our Story</h4>
                         <div id="asteriks">
                             <i class="fa-sharp fa-solid fa-location-dot fa-bounce fa-2xl"></i>
@@ -66,6 +73,199 @@
     <!--Portfolio Start!-->
 
 
+    <section id="portfolio">
+        <div class="portfolio">
+            <div class="portfolio-item ani1">
+                <img src="images-portfolio/andrei-stan-P7cQKGz10VY-unsplash.jpg" alt="">
+                <div class="overlay">
+                    <span class="material-symbols-outlined">
+                        flight_takeoff
+                        </span>
+                </div>
+            </div>
+            <div class="portfolio-item ani2">
+                <img src="images-portfolio/cristina-gottardi-I1Lv2yX67GI-unsplash.jpg" alt="">
+                <div class="overlay">
+                    <span class="material-symbols-outlined">
+                        flight_takeoff
+                        </span>
+                </div>
+            </div>
+            <div class="portfolio-item ani3">
+                <img src="images-portfolio/dan-v-pyU9s6sjRck-unsplash.jpg" alt="">
+                <div class="overlay">
+                    <span class="material-symbols-outlined">
+                        flight_takeoff
+                        </span>
+                </div>
+            </div>
+            <div class="portfolio-item ani4">
+                <img src="images-portfolio/fineas-anton-kC1-9Snr9hI-unsplash.jpg" alt="">
+                <div class="overlay">
+                    <span class="material-symbols-outlined">
+                        flight_takeoff
+                        </span>
+                </div>
+            </div>
+            <div class="portfolio-item ani5">
+                <img src="images-portfolio/ioana-cristiana-cNORSTtOx3A-unsplash.jpg" alt="">
+                <div class="overlay">
+                    <span class="material-symbols-outlined">
+                        flight_takeoff
+                        </span>
+                </div>
+            </div>
+            <div class="portfolio-item ani6">
+                <img src="images-portfolio/mathew-schwartz-s87bBFZviAU-unsplash.jpg" alt="">
+                <div class="overlay">
+                    <span class="material-symbols-outlined">
+                        flight_takeoff
+                        </span>
+                </div>
+             </div>
+             <div class="portfolio-item ani7">
+                <img src="images-portfolio/alicia-christin-gerald-zm4CcBeBbp8-unsplash.jpg" alt="">
+                <div class="overlay">
+                    <span class="material-symbols-outlined">
+                        flight_takeoff
+                        </span>
+                </div>
+             </div>
+             <div class="portfolio-item ani8">
+                <img src="images-portfolio/yeshi-kangrang-iuqxv7kFj64-unsplash.jpg" alt="">
+                <div class="overlay">
+                    <span class="material-symbols-outlined">
+                        flight_takeoff
+                        </span>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- port end-->
+
+    <!---contactstart-->
+        <section id="contact">
+            <div class="contact">
+                <div class="container">
+                    <div class="page-title">
+                        <h2>CONTACT</h2>
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-item anime-top">
+                            <span class="material-symbols-outlined">
+                                pin_drop
+                                </span>
+                                <p>Padua, Italy</p>
+                                
+                                <p>Istanbul, Turkey</p>
+                        </div>
+                        <div class="contact-item anime-bottom">
+                            <span class="material-symbols-outlined">
+                                help
+                                </span>
+                                <p>F.A.Q</p>
+                               
+                        </div>
+                        <div class="contact-item anime-top">
+                            <span class="material-symbols-outlined">
+                                mail
+                                </span>
+                                <p>an***@gmail.com</p>
+                              
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--contact end -->
+
+
+
+    <!--Footer Start-->
+            <footer id="footer">
+                <div class="footer">
+                    <div class="footer-content anime-bottom">
+                        <div class="page-title">
+                            <h2>ABOUT ME</h2>
+                        </div>
+                        <div class="footer-copyright">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, beatae!</p>
+                            <br>
+                            <p> Praesentium explicabo aliquid corrupti aspernatur cum esse possimus soluta?</p>
+                        </div>
+                        <nav class="footer-social">
+                            <ul>
+                                <li>
+                                    <a href="#"> <i class="gg-instagram"></i></a>
+                                    <a href="#"><i class="gg-twitter"></i></a>
+                                    <a href="#"><i class="gg-google"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </footer>
+    <!--FooterEnd-->
+
+    <script>
+        window.sr=ScrollReveal();
+
+        sr.reveal('.anime-left',{
+            origin:'left',
+            duration:1000,
+            distance:'25rem',
+            delay:500
+        })
+        sr.reveal('.anime-right',{
+            origin:'right',
+            duration:1000,
+            distance:'25rem',
+            delay:900
+        })
+        sr.reveal('.anime-top',{
+            origin:'top',
+            duration:1000,
+            distance:'25rem',
+            delay:600
+        })
+        sr.reveal('.anime-bottom',{
+            origin:'bottom',
+            duration:1000,
+            distance:'25rem',
+            delay:600
+        })
+    </script>
+  
+   <script>
+    //fotolar delayli geliyor
+    ScrollReveal().reveal('.ani1',{delay:250});
+    ScrollReveal().reveal('.ani2',{delay:500});
+    ScrollReveal().reveal('.ani3',{delay:750});
+    ScrollReveal().reveal('.ani4',{delay:1000});
+    ScrollReveal().reveal('.ani5',{delay:1250});
+    ScrollReveal().reveal('.ani6',{delay:1500});
+    ScrollReveal().reveal('.ani7',{delay:1750});
+    ScrollReveal().reveal('.ani8',{delay:2000});
+
+   </script>
+
+    <script>
+        const menuItems = document.getElementById('menu-items');
+        console.log(menuItems);
+        menuItems.style.maxHeight = "0px";
+
+        function menuToggle(){
+            if(menuItems.style.maxHeight == "0px"){
+                menuItems.style.maxHeight = "200px";
+            }else{
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+
+
+    </script>
+  
 
 </body>
 </html>

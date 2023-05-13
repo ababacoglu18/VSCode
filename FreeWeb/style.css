@@ -49,6 +49,8 @@ section,span,p{
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;  /*  tüm ekranı kaplar! çok önemli*/
+
+    
 }
 
 .header-h2{
@@ -64,9 +66,11 @@ section,span,p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 0;
+    padding: 80px 0;
 
 }
+
+
 
 
 
@@ -76,6 +80,7 @@ section,span,p{
     border-bottom: 5px solid #e9cccc;
     border-radius: 35px;
     padding-bottom: 5px;
+
 }
 
 .navbar-list{ /*ul*/
@@ -245,4 +250,254 @@ h3{
         text-align: center;
         color: #2c2727;
     }
+
+
+
+    /*Portfolio Section*/
+
+    .portfolio{
+        display: flex;
+        flex-wrap: wrap; /*resim taşarsa aşağı atıyor.*/
+    }
+
+    .portfolio-item{
+        width: 25%;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 20px;
+        
+    }
+    .portfolio-item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;  /*en boy oranını koruyup sığdırıyor!*/
+        border-radius:  20px;
+        transition: .5s;
+    }
+
+
+    .overlay{
+        width: 100%;
+        height: 100%;
+        background-color: #5b2a02;
+
+        position: absolute;
+        top: 100%;
+      
+        opacity: 0.8;
+        color: #fff;
+        font-size: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 20px;
+        transition: .5s;
+    }
+
+    .portfolio-item:hover .overlay{
+
+        top: 0; /*iconların*/
+    }
+    .portfolio-item:hover img{
+        transform: scale(1.2);
+    }
+
+
+    /*contact*/
+
+    .contact{
+        padding: 10px 0;
+
+    }
+
+    .contact h2{
+        padding-top: 50px;
+        font-family: 'Gotu', sans-serif;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        color: #806262;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .contact-content{
+        padding-left: 25%;
+        padding-right: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .contact span{
+        
+        margin-bottom: 20px;
+    }
+
+    .contact-item{
+        color: #806262;
+    }
+
+    .contact-item p {
+        font-size: 14px;
+       /*line-height satır arası boşluk*/
+    }
+
+
+    /*Footer*/
+
+    .footer h2 {
+        padding-top: 50px;
+        font-family: 'Gotu', sans-serif;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        color: #806262;
+        font-size: 30px;
+        font-weight: 500;
+
+    }
+
+    .footer{
+        background-color: #000;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .footer-copyright {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        flex-basis: 55%;
+        margin-top: 20px;
+        text-align: center;
+        color: #fff;
+    }
+    .footer-content{
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer-social ul li{
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-between;
+        
+        
+    }
+
+    .footer-social ul li a {
+        margin-left: 70px;
+    }
+
+    #menu-icon{
+        font-size: 55px;
+        display: none;
+    }
+
+    @media only screen and (max-width:768px){
+
+        .header-menu{
+            display: flex;
+            flex-direction: column ;
+        }
+        .header-menu ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            background-color: #5b2a02;
+            opacity: 0.5;
+            width: 100%;
+            overflow: hidden;
+            transition: max-height .5s; /*menünün açılması .5s*/
+        }
+
+        .header-menu ul li{
+            margin-right: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+         
+        }
+        .header-menu ul li a {
+            color: #fff;
+            opacity: 1;
+        }
+        .header-menu #menu-icon{
+            display: block;
+            cursor: pointer;
+            color: #fff;
+
+            size:500px;
+
+            
+        }
+
+        .header-navbar{
+            display: flex;
+            flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+        }
+
+        .navbar-list{
+            margin-top: 70px;
+        }
+
+
+
+        .about-content{
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .portfolio .portfolio-item{
+            flex-basis: 50%;
+        }
+
+        .contact-content{
+            flex-direction: column;
+            padding-bottom: 20px;
+        }
+        .contact-content{
+            flex-direction: column;
+          
+        }
+        .contact-item {
+            padding-top: 30px;
+            padding-bottom: 20px;
+            align-items: center;
+            margin-left: 10px;
+            justify-content: center;
+        }
+        .contact-item span{
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            justify-content: center;
+        }
+    }
+
+
+    /*telefon*/
+    @media only screen and (max-width:500px){
+
+        .portfolio .portfolio-item{
+            flex-basis: 100%;
+        }
+
+    }
+    
     
